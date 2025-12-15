@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# SQLite database
+*.db
+*.sqlite3
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage
+htmlcov/
+.coverage
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+
+# Pydantic export (если есть)
+*.json
+
+# FastAPI auto docs (optional)
+docs/_build/
