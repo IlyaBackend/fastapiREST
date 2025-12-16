@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    container_name: fastapi-essence
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/app
+      - ./essences.db:/app/essences.db
+    command: uvicorn main:app --host 0.0.0.0 --port 80 --reload

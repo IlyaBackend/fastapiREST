@@ -25,8 +25,6 @@ app = FastAPI(
     version=APP_VERSION,
     lifespan=lifespan,
 )
-
-
 app.include_router(router)
 
 

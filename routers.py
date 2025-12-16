@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import Annotated, List, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from fastapi.responses import Response
@@ -138,7 +138,7 @@ async def create_essences_bulk(
     summary=SUMMARY_CREATE_ESSENCE,
 )
 async def create_essence(
-    essence_in: EssenceCreate,
+    essence_in: Annotated[EssenceCreate, Depends()],
     db: AsyncSession = Depends(get_db),
 ):
     essence = Essence(**essence_in.model_dump())

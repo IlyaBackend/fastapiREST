@@ -16,13 +16,9 @@ class EssenceBase(BaseModel):
 class EssenceCreate(EssenceBase):
     """Схема для создания новой записи."""
 
-    pass
-
 
 class EssenceReplace(EssenceBase):
     """Схема для полного замещения/обновления PUT."""
-
-    pass
 
 
 class EssenceUpdate(BaseModel):
