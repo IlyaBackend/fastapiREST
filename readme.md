@@ -106,6 +106,7 @@
 ├── requirements.txt    # Список зависимостей
 ├── routers.py          # Логика эндпоинтов (View)
 └── schemas.py          # Pydantic схемы (валидация)
+```
 
 ## Автор 
  
