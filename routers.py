@@ -12,6 +12,12 @@ from schemas import EssenceCreate, EssenceOut, EssenceReplace, EssenceUpdate
 
 URL_PREFIX = '/api/essences'
 SUMMARY_GET_ESSENCE_LIST = 'Получить список сущностей'
+SUMMARY_CREATE_ESSENCE = 'Создать сущность'
+SUMMARY_PUT_ESSENCE = 'Обновить сущность полностью'
+SUMMARY_PATCH_ESSENCE = 'Частично обновить сущность'
+SUMMARY_ONE_ESSENCE = 'Получить одну сущность'
+SUMMARY_DELETE_ESSENCE = 'Удалить сущность'
+SUMMARY_BULK_ESSENCE = 'Массовое создание сущностей'
 DESC_ESSENCE_LIST_FILTERS_PAGINATIONS = (
     'Список сущностей с фильтрацией и пагинацией')
 DESC_FILTERS_NAME = 'Фильтр по названию'
@@ -19,15 +25,9 @@ DESC_MIN_QUANTITY = 'Минимальное количество'
 DESC_MAX_QUANTITY = 'Максимальное количество'
 DESC_LIMIT_LIST = 'Количество записей на страницу'
 DESC_PAGINATION_LIST = 'Смещение для пагинации'
-SUMMARY_ONE_ESSENCE = 'Получить одну сущность'
-ERROR_ESSENCE_NOT_FOUND = 'Сущность не найдена'
-SUMMARY_BULK_ESSENCE = 'Массовое создание сущностей'
 DESC_BULK_ESSENCE = 'Создаёт несколько сущностей за один запрос'
-SUMMARY_CREATE_ESSENCE = 'Создать сущность'
-SUMMARY_PUT_ESSENCE = 'Обновить сущность полностью'
-SUMMARY_PATCH_ESSENCE = 'Частично обновить сущность'
 DESC_PATCH_ESSENCE = 'Позволяет обновлять только указанные поля сущности'
-SUMMARY_DELETE_ESSENCE = 'Удалить сущность'
+ERROR_ESSENCE_NOT_FOUND = 'Сущность не найдена'
 RESPONSE_DELETE_ESSENCE = 'ESSENCE DELETED'
 
 
